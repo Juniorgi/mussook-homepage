@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-labelledby="title desc">
+  <title id="title">머니쑥쑥 로고</title>
+  <desc id="desc">어린이 청소년을 위한 재테크 교실 머니쑥쑥 로고</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff2a8"/>
+      <stop offset="0.38" stop-color="#e8a93a"/>
+      <stop offset="0.72" stop-color="#b76b1c"/>
+      <stop offset="1" stop-color="#ffe08a"/>
+    </linearGradient>
+    <linearGradient id="goldTop" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#fff7bf"/>
+      <stop offset="0.55" stop-color="#e7b54b"/>
+      <stop offset="1" stop-color="#a95c18"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#7f551d" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="520" height="420" fill="#fff8eb"/>
+
+  <g filter="url(#shadow)">
+    <path d="M240 72c-22-30-58-29-72-18 4 40 42 54 72 44V72Z" fill="#56a829"/>
+    <path d="M278 70c19-32 55-34 72-24 0 39-38 59-72 49V70Z" fill="#4f9f25"/>
+    <rect x="238" y="90" width="42" height="50" rx="19" fill="#4f9f25"/>
+
+    <g transform="translate(80 128)">
+      <g transform="translate(0 118)">
+        <path d="M58 0h304l36 35-48 33H42L0 34 58 0Z" fill="url(#gold)"/>
+        <path d="M58 0h304l36 35H42L0 34 58 0Z" fill="url(#goldTop)"/>
+        <path d="M42 35h356l-48 33H42L0 34l42 1Z" fill="#a95b19" opacity="0.3"/>
+      </g>
+      <g transform="translate(56 78)">
+        <path d="M48 0h236l32 30-42 30H34L0 30 48 0Z" fill="url(#gold)"/>
+        <path d="M48 0h236l32 30H34L0 30 48 0Z" fill="url(#goldTop)"/>
+      </g>
+      <g transform="translate(104 40)">
+        <path d="M40 0h156l28 26-36 28H26L0 26 40 0Z" fill="url(#gold)"/>
+        <path d="M40 0h156l28 26H26L0 26 40 0Z" fill="url(#goldTop)"/>
+      </g>
+      <g transform="translate(146 5)">
+        <path d="M34 0h92l24 24-30 27H22L0 24 34 0Z" fill="url(#gold)"/>
+        <path d="M34 0h92l24 24H22L0 24 34 0Z" fill="url(#goldTop)"/>
+        <text x="74" y="24" text-anchor="middle" font-family="Pretendard, Arial, sans-serif" font-size="12" font-weight="800" fill="#8c5b17">MONEY</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="260" y="330" text-anchor="middle" font-family="Pretendard, SUIT, Arial, sans-serif" font-size="27" font-weight="900" fill="#5a5148">
+    어린이 청소년을 위한 재테크 교실
+  </text>
+  <text x="260" y="386" text-anchor="middle" font-family="Pretendard, SUIT, Arial, sans-serif" font-size="64" font-weight="1000" fill="#51483f" letter-spacing="-2">
+    머니쑥쑥
+  </text>
+</svg>
