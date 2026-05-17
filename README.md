@@ -9,7 +9,7 @@
 - `styles.css`: 디자인 스타일
 - `assets/moneytown-characters.png`: 메인 캐릭터 비주얼
 - `assets/logo-moneysook-kids.svg`: 어린이·청소년용 머니쑥쑥 로고
-- `assets/suksuk-edu-intro.jpg`: 머니쑥쑥 소개 이미지
+- `assets/suksuk-edu-intro.png`: 머니쑥쑥 소개 이미지
 - `assets/reference-mockup.jpg`: 참고용 시안 이미지
 
 ## GitHub Pages 배포 방법
