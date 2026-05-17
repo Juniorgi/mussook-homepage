@@ -233,9 +233,9 @@ h3 {
 
 .hero-visual img {
   width: 100%;
-  height: clamp(310px, 36vw, 440px);
+  height: clamp(260px, 28vw, 360px);
   object-fit: cover;
-  object-position: 50% 58%;
+  object-position: 50% 38%;
 }
 
 .hero-badges {
@@ -605,7 +605,7 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 64%;
+  object-position: 50% 42%;
 }
 
 .character-list {
@@ -917,7 +917,7 @@ blockquote,
   }
 
   .hero-visual img {
-    height: 520px;
+    height: 360px;
   }
 
   .card-grid.four,
@@ -969,7 +969,7 @@ blockquote,
   }
 
   .hero-visual img {
-    height: 430px;
+    height: 320px;
   }
 
   .poster-crop {
