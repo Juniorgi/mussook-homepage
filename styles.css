@@ -744,12 +744,15 @@ h3 {
 
 .teacher-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
-.teacher-grid article {
-  min-height: 190px;
+.teacher-card {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 18px;
+  min-height: 260px;
   padding: 28px;
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--line);
@@ -757,18 +760,105 @@ h3 {
   box-shadow: 0 12px 32px rgba(40, 30, 20, 0.07);
 }
 
+.teacher-card.lead-teacher {
+  grid-column: 1 / -1;
+  min-height: 230px;
+  background: linear-gradient(135deg, rgba(223, 245, 237, 0.92), rgba(255, 255, 255, 0.9));
+}
+
+.teacher-photo {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  background: var(--green);
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(22, 136, 61, 0.18);
+}
+
+.teacher-card:nth-child(2) .teacher-photo,
+.teacher-card:nth-child(3) .teacher-photo {
+  background: var(--orange);
+}
+
+.teacher-card:nth-child(4) .teacher-photo {
+  background: var(--mint-strong);
+}
+
+.teacher-card:nth-child(5) .teacher-photo {
+  background: var(--pink);
+}
+
+.teacher-grid small {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 900;
+}
+
 .teacher-grid strong {
   display: block;
   color: var(--green-dark);
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.25;
 }
 
 .teacher-grid p {
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 650;
+}
+
+.teacher-grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teacher-grid li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 900;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.teacher-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.teacher-courses b {
+  width: 100%;
+  color: var(--brown);
+  font-size: 14px;
+}
+
+.teacher-courses span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  color: var(--brown);
+  font-size: 13px;
+  font-weight: 800;
+  background: rgba(255, 138, 61, 0.12);
+  border-radius: 999px;
 }
 
 blockquote,
@@ -1002,6 +1092,10 @@ blockquote,
   }
 
   .character-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-card {
     grid-template-columns: 1fr;
   }
 
