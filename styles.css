@@ -767,13 +767,10 @@ h3 {
 }
 
 .teacher-photo {
-  display: grid;
   width: 76px;
   height: 76px;
-  place-items: center;
-  color: white;
-  font-size: 30px;
-  font-weight: 900;
+  object-fit: cover;
+  object-position: top center;
   background: var(--green);
   border-radius: 24px;
   box-shadow: 0 10px 24px rgba(22, 136, 61, 0.18);
@@ -790,6 +787,23 @@ h3 {
 
 .teacher-card:nth-child(5) .teacher-photo {
   background: var(--pink);
+}
+
+.teacher-card.pending-photo {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(223, 245, 237, 0.58));
+}
+
+.teacher-photo-placeholder {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 900;
+  background: var(--mint);
+  border: 1px dashed rgba(22, 136, 61, 0.35);
+  border-radius: 24px;
 }
 
 .teacher-grid small {

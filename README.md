@@ -12,6 +12,10 @@
 - `assets/suksuk-edu-intro.png`: 머니쑥쑥 소개 이미지
 - `assets/saving-talk-child.png`: 저축 이야기를 하는 아이 활동 사진
 - `assets/presentation-child.png`: 발표에 적극적으로 참여하는 아이 활동 사진
+- `assets/teacher-jang-yurina.png`: 장유리나 프로필 사진
+- `assets/teacher-lee-chaebeom.jpg`: 이채범 프로필 사진
+- `assets/teacher-heo-yujin.jpg`: 허유진 프로필 사진
+- `assets/teacher-oh-jinseung.jpg`: 오진승 프로필 사진
 - `assets/reference-mockup.jpg`: 참고용 시안 이미지
 
 ## GitHub Pages 배포 방법
