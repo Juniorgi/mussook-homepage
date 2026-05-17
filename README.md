@@ -10,6 +10,8 @@
 - `assets/moneytown-characters.png`: 메인 캐릭터 비주얼
 - `assets/logo-moneysook-kids.svg`: 어린이·청소년용 머니쑥쑥 로고
 - `assets/suksuk-edu-intro.png`: 머니쑥쑥 소개 이미지
+- `assets/saving-talk-child.png`: 저축 이야기를 하는 아이 활동 사진
+- `assets/presentation-child.png`: 발표에 적극적으로 참여하는 아이 활동 사진
 - `assets/reference-mockup.jpg`: 참고용 시안 이미지
 
 ## GitHub Pages 배포 방법
