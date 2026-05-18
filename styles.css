@@ -432,6 +432,8 @@ h3 {
 }
 
 .core-card-grid span {
+  position: relative;
+  z-index: 1;
   display: grid;
   width: 36px;
   height: 36px;
@@ -448,7 +450,7 @@ h3 {
 }
 
 .core-card-grid article:nth-child(3) span {
-  background: var(--mint-dark);
+  background: var(--mint-strong);
 }
 
 .core-card-grid article:nth-child(4) span {
@@ -517,14 +519,12 @@ h3 {
   border-right: 0;
 }
 
-.learn-emoji {
-  display: grid;
-  width: 64px;
-  height: 58px;
-  place-items: center;
+.learn-icon {
+  display: block;
+  width: 74px;
+  height: 60px;
   margin-bottom: 6px;
-  font-size: 40px;
-  line-height: 1;
+  object-fit: contain;
 }
 
 .learn-strip h3 {
@@ -822,7 +822,7 @@ h3 {
 
 .learn-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -832,27 +832,32 @@ h3 {
   text-align: center;
 }
 
-.learn-grid span {
+.learn-grid-emoji {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 70px;
   height: 70px;
   margin-bottom: 14px;
-  color: white;
-  font-weight: 900;
-  background: var(--green);
+  font-size: 36px;
+  line-height: 1;
+  background: rgba(255, 248, 235, 0.9);
   border-radius: 22px;
 }
 
-.learn-grid article:nth-child(2) span,
-.learn-grid article:nth-child(5) span {
-  background: var(--orange);
+.learn-grid h3 {
+  color: var(--green-dark);
+  font-size: 18px;
 }
 
-.learn-grid article:nth-child(3) span,
-.learn-grid article:nth-child(6) span {
-  background: var(--mint-strong);
+.learn-grid article:nth-child(2) .learn-grid-emoji,
+.learn-grid article:nth-child(5) .learn-grid-emoji {
+  background: rgba(255, 138, 61, 0.16);
+}
+
+.learn-grid article:nth-child(3) .learn-grid-emoji,
+.learn-grid article:nth-child(6) .learn-grid-emoji {
+  background: rgba(81, 191, 164, 0.18);
 }
 
 .program-band {
@@ -1130,6 +1135,47 @@ blockquote,
 
 .contact-actions {
   justify-content: center;
+}
+
+.kakao-consult {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  max-width: 620px;
+  margin: 30px auto 0;
+  padding: 20px;
+  text-align: left;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+}
+
+.kakao-consult img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.kakao-consult strong {
+  display: block;
+  color: var(--green-dark);
+  font-size: 20px;
+}
+
+.kakao-consult p {
+  margin: 8px 0 10px;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.kakao-consult a {
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .contact-info {
@@ -1456,8 +1502,14 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .review-grid,
-  .contact-info {
+  .contact-info,
+  .kakao-consult {
     grid-template-columns: 1fr;
+  }
+
+  .kakao-consult {
+    justify-items: center;
+    text-align: center;
   }
 
   .learn-strip article {
