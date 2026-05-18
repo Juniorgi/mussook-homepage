@@ -506,12 +506,14 @@ h3 {
   border-right: 0;
 }
 
-.learn-icon {
-  display: block;
+.learn-emoji {
+  display: grid;
   width: 64px;
-  height: 48px;
-  margin-bottom: 7px;
-  object-fit: contain;
+  height: 58px;
+  place-items: center;
+  margin-bottom: 6px;
+  font-size: 40px;
+  line-height: 1;
 }
 
 .learn-strip h3 {
