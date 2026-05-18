@@ -381,42 +381,43 @@ h3 {
 .core-card-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 18px;
 }
 
 .core-card-grid article {
   position: relative;
+  display: grid;
+  align-content: start;
+  min-height: 170px;
   overflow: hidden;
-  min-height: 162px;
-  padding: 24px 18px;
+  padding: 28px 24px;
   background: rgba(255, 255, 255, 0.82);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  box-shadow: 0 12px 32px rgba(40, 30, 20, 0.07);
+  border: 1px solid rgba(73, 51, 36, 0.12);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
 }
 
 .core-card-grid article::after {
   content: "";
   position: absolute;
-  top: -28px;
-  right: -18px;
+  top: -32px;
+  right: -24px;
   width: 92px;
   height: 92px;
-  background: var(--mint);
+  background: rgba(136, 205, 191, 0.22);
   border-radius: 999px;
-  opacity: 0.8;
 }
 
 .core-card-grid article:nth-child(2)::after {
-  background: #ffe8d9;
+  background: rgba(255, 138, 61, 0.16);
 }
 
 .core-card-grid article:nth-child(3)::after {
-  background: #d9f3f1;
+  background: rgba(49, 170, 153, 0.18);
 }
 
 .core-card-grid article:nth-child(4)::after {
-  background: #ffe0eb;
+  background: rgba(255, 99, 132, 0.16);
 }
 
 .core-card-grid span {
@@ -424,11 +425,11 @@ h3 {
   width: 36px;
   height: 36px;
   place-items: center;
-  margin-bottom: 16px;
-  color: white;
+  margin-bottom: 18px;
+  color: #fff;
   font-weight: 900;
   background: var(--green);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .core-card-grid article:nth-child(2) span {
@@ -436,7 +437,7 @@ h3 {
 }
 
 .core-card-grid article:nth-child(3) span {
-  background: var(--mint-strong);
+  background: var(--mint-dark);
 }
 
 .core-card-grid article:nth-child(4) span {
@@ -444,18 +445,17 @@ h3 {
 }
 
 .core-card-grid h3 {
-  position: relative;
-  z-index: 1;
-  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--brown);
+  font-size: 24px;
 }
 
 .core-card-grid p {
-  position: relative;
-  z-index: 1;
   margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-  font-weight: 700;
+  color: var(--brown);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.55;
 }
 
 .card-grid {
