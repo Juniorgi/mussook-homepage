@@ -521,8 +521,8 @@ h3 {
 
 .learn-icon {
   display: block;
-  width: 74px;
-  height: 60px;
+  width: 108px;
+  height: 84px;
   margin-bottom: 6px;
   object-fit: contain;
 }
@@ -850,6 +850,10 @@ h3 {
   font-size: 18px;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .learn-grid article:nth-child(2) .learn-grid-emoji,
 .learn-grid article:nth-child(5) .learn-grid-emoji {
   background: rgba(255, 138, 61, 0.16);
@@ -916,8 +920,8 @@ h3 {
 }
 
 .proof-points {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
   gap: 12px;
 }
 
@@ -1504,6 +1508,10 @@ blockquote,
   .review-grid,
   .contact-info,
   .kakao-consult {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-points {
     grid-template-columns: 1fr;
   }
 
