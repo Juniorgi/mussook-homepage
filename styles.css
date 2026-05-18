@@ -467,6 +467,69 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.learn-strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  overflow: hidden;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(22, 136, 61, 0.28);
+  border-radius: 18px;
+}
+
+.learn-strip::before {
+  content: "우리가 배우는 것 ★";
+  position: absolute;
+  top: -1px;
+  left: 22px;
+  padding: 4px 18px 6px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  background: var(--green);
+  border-radius: 0 0 12px 12px;
+  transform: rotate(-2deg);
+}
+
+.learn-strip article {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  min-height: 150px;
+  padding: 36px 14px 12px;
+  text-align: center;
+  border-right: 1px dashed rgba(255, 138, 61, 0.42);
+}
+
+.learn-strip article:last-child {
+  border-right: 0;
+}
+
+.learn-emoji {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  margin-bottom: 6px;
+  font-size: 34px;
+}
+
+.learn-strip h3 {
+  margin-bottom: 4px;
+  color: var(--green-dark);
+  font-size: 18px;
+}
+
+.learn-strip p {
+  margin: 0;
+  color: var(--brown);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.32;
+  word-break: keep-all;
+}
+
 .feature-card,
 .program-cards article,
 .character-list article,
@@ -1086,6 +1149,13 @@ blockquote,
   word-break: keep-all;
 }
 
+.company-message .company-sign {
+  margin-top: -10px;
+  color: var(--brown);
+  font-size: clamp(17px, 1.8vw, 23px);
+  font-weight: 800;
+}
+
 .company-message strong {
   display: block;
   margin-top: 14px;
@@ -1160,10 +1230,15 @@ blockquote,
 
   .card-grid.four,
   .core-card-grid,
+  .learn-strip,
   .learn-grid,
   .review-grid,
   .contact-info {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .learn-strip article:nth-child(2n) {
+    border-right: 0;
   }
 
   .program-cards,
@@ -1247,10 +1322,21 @@ blockquote,
 
   .card-grid.four,
   .core-card-grid,
+  .learn-strip,
   .learn-grid,
   .review-grid,
   .contact-info {
     grid-template-columns: 1fr;
+  }
+
+  .learn-strip article {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px dashed rgba(255, 138, 61, 0.42);
+  }
+
+  .learn-strip article:last-child {
+    border-bottom: 0;
   }
 
   .top-core-heading {
