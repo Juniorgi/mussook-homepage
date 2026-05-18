@@ -10,6 +10,7 @@
 - `assets/moneytown-characters.png`: 메인 캐릭터 비주얼
 - `assets/mosseuna-challenge-hero.png`: 메인 히어로 모쓰나 챌린지 비주얼
 - `assets/logo-moneysook-kids.svg`: 어린이·청소년용 머니쑥쑥 로고
+- `assets/mussooklogo.png`: 상단 머니쑥쑥 로고
 - `assets/suksuk-edu-intro.png`: 머니쑥쑥 소개 이미지
 - `assets/saving-talk-child.png`: 저축 이야기를 하는 아이 활동 사진
 - `assets/presentation-child.png`: 발표에 적극적으로 참여하는 아이 활동 사진
