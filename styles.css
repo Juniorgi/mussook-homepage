@@ -470,7 +470,7 @@ h3 {
 .learn-strip {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   overflow: hidden;
   padding: 14px 18px;
   background: rgba(255, 255, 255, 0.68);
@@ -506,13 +506,12 @@ h3 {
   border-right: 0;
 }
 
-.learn-emoji {
-  display: grid;
-  width: 50px;
-  height: 50px;
-  place-items: center;
-  margin-bottom: 6px;
-  font-size: 34px;
+.learn-icon {
+  display: block;
+  width: 64px;
+  height: 48px;
+  margin-bottom: 7px;
+  object-fit: contain;
 }
 
 .learn-strip h3 {
@@ -935,9 +934,11 @@ h3 {
 }
 
 .teacher-card.lead-teacher {
-  grid-column: 1 / -1;
-  min-height: 230px;
-  background: linear-gradient(135deg, rgba(223, 245, 237, 0.92), rgba(255, 255, 255, 0.9));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 248, 235, 0.86));
+}
+
+.teacher-card.vice-teacher {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(223, 245, 237, 0.72));
 }
 
 .teacher-photo {
@@ -945,9 +946,14 @@ h3 {
   height: 138px;
   object-fit: cover;
   object-position: top center;
-  background: var(--green);
+  background: linear-gradient(145deg, #fff8eb, #eef8f3);
   border-radius: 18px;
   box-shadow: 0 10px 24px rgba(22, 136, 61, 0.18);
+}
+
+.teacher-card.lead-teacher .teacher-photo {
+  background: linear-gradient(145deg, #fffdf7, #f3eadc);
+  box-shadow: 0 10px 24px rgba(73, 51, 36, 0.12);
 }
 
 .teacher-card:nth-child(2) .teacher-photo,
