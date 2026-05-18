@@ -876,6 +876,125 @@ h3 {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(223, 245, 237, 0.75));
 }
 
+.event-camp-section {
+  padding: 46px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(223, 245, 237, 0.64));
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+
+.event-camp-section .section-heading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.event-camp-section .section-heading p:last-child {
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.event-camp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.event-camp-card {
+  display: grid;
+  align-content: start;
+  min-height: 300px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(40, 30, 20, 0.08);
+}
+
+.event-camp-card.featured {
+  background: linear-gradient(145deg, #ffffff, rgba(255, 248, 235, 0.92));
+}
+
+.event-camp-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 950;
+  background: var(--green);
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(22, 136, 61, 0.18);
+}
+
+.event-camp-icon.mint {
+  background: var(--mint-strong);
+}
+
+.event-camp-icon.orange {
+  background: var(--orange);
+}
+
+.event-camp-icon.pink {
+  background: var(--pink);
+}
+
+.event-camp-kicker {
+  margin: 0 0 4px;
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.event-camp-card h3 {
+  margin: 0 0 10px;
+  color: var(--brown);
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.event-camp-card strong {
+  display: block;
+  min-height: 42px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.event-camp-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-camp-card li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--brown);
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.event-camp-card li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+}
+
 .program-copy {
   max-width: 820px;
 }
@@ -1413,6 +1532,7 @@ blockquote,
   .core-card-grid,
   .learn-strip,
   .learn-grid,
+  .event-camp-grid,
   .review-grid,
   .contact-info {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1505,6 +1625,7 @@ blockquote,
   .core-card-grid,
   .learn-strip,
   .learn-grid,
+  .event-camp-grid,
   .review-grid,
   .contact-info,
   .kakao-consult {
@@ -1548,6 +1669,7 @@ blockquote,
   }
 
   .program-band,
+  .event-camp-section,
   .proof-copy,
   .contact-section,
   .adult-section {
