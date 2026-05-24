@@ -1090,6 +1090,70 @@ h3 {
   font-size: 20px;
 }
 
+.operation-section {
+  padding: 46px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+
+.operation-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.operation-grid article {
+  min-height: 148px;
+  padding: 22px;
+  background: linear-gradient(145deg, #ffffff, rgba(255, 248, 235, 0.76));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.operation-grid span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 14px;
+  padding: 0 11px;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 950;
+  background: var(--mint);
+  border-radius: 999px;
+}
+
+.operation-grid strong {
+  display: block;
+  color: var(--brown);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.education-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.education-keywords span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  color: var(--green-dark);
+  font-size: 16px;
+  font-weight: 900;
+  background: rgba(223, 245, 237, 0.76);
+  border: 1px solid rgba(22, 136, 61, 0.18);
+  border-radius: 999px;
+}
+
 .review-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1628,6 +1692,7 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .event-camp-grid,
+  .operation-grid,
   .review-change,
   .review-grid,
   .contact-info {
@@ -1726,6 +1791,7 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .event-camp-grid,
+  .operation-grid,
   .review-change,
   .review-grid,
   .contact-info,
@@ -1775,6 +1841,7 @@ blockquote,
 
   .program-band,
   .event-camp-section,
+  .operation-section,
   .proof-copy,
   .contact-section,
   .adult-section {
