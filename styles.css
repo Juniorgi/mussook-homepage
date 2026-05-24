@@ -1096,6 +1096,61 @@ h3 {
   gap: 14px;
 }
 
+.review-metric,
+.review-change {
+  min-height: 210px;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(40, 30, 20, 0.07);
+}
+
+.review-metric span,
+.review-change span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  margin-bottom: 18px;
+  padding: 0 12px;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 950;
+  background: rgba(223, 245, 237, 0.9);
+  border-radius: 999px;
+}
+
+.review-metric h3,
+.review-change h3 {
+  color: var(--brown);
+  font-size: 22px;
+}
+
+.review-metric p,
+.review-change p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.review-change {
+  grid-column: span 4;
+  min-height: 0;
+  background: linear-gradient(135deg, rgba(22, 136, 61, 0.92), rgba(81, 191, 164, 0.82));
+}
+
+.review-change span,
+.review-change h3,
+.review-change p {
+  color: white;
+}
+
+.review-change span {
+  background: rgba(255, 255, 255, 0.18);
+}
+
 .teacher-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1573,9 +1628,14 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .event-camp-grid,
+  .review-change,
   .review-grid,
   .contact-info {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-change {
+    grid-column: span 2;
   }
 
   .learn-strip article:nth-child(2n) {
@@ -1666,10 +1726,15 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .event-camp-grid,
+  .review-change,
   .review-grid,
   .contact-info,
   .kakao-consult {
     grid-template-columns: 1fr;
+  }
+
+  .review-change {
+    grid-column: auto;
   }
 
   .proof-points {
