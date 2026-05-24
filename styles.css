@@ -177,6 +177,46 @@ h1 .title-line {
   white-space: nowrap;
 }
 
+.mosseuna-statement {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  max-width: 620px;
+  margin-top: 18px;
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.mosseuna-word {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(40, 30, 20, 0.1);
+}
+
+.mosseuna-mo {
+  background: var(--orange);
+}
+
+.mosseuna-sseu {
+  background: var(--green);
+}
+
+.mosseuna-na {
+  color: var(--green-dark);
+  background: #b7df45;
+}
+
+.mosseuna-statement strong {
+  color: var(--brown);
+  font-weight: 950;
+}
+
 h2 {
   margin: 0;
   color: var(--brown);
