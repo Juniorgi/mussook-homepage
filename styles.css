@@ -136,8 +136,8 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(360px, 0.72fr) minmax(520px, 1.28fr);
-  gap: 28px;
+  grid-template-columns: minmax(420px, 0.88fr) minmax(500px, 1.12fr);
+  gap: 44px;
   align-items: center;
   min-height: auto;
   padding-top: 42px;
@@ -1106,8 +1106,8 @@ h3 {
 }
 
 .operation-grid article {
-  min-height: 148px;
-  padding: 22px;
+  min-height: 168px;
+  padding: 24px;
   background: linear-gradient(145deg, #ffffff, rgba(255, 248, 235, 0.76));
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -1116,11 +1116,11 @@ h3 {
 .operation-grid span {
   display: inline-flex;
   align-items: center;
-  min-height: 30px;
-  margin-bottom: 14px;
-  padding: 0 11px;
+  min-height: 34px;
+  margin-bottom: 16px;
+  padding: 0 13px;
   color: var(--green-dark);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 950;
   background: var(--mint);
   border-radius: 999px;
@@ -1129,7 +1129,7 @@ h3 {
 .operation-grid strong {
   display: block;
   color: var(--brown);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 900;
   line-height: 1.45;
 }
@@ -1144,10 +1144,10 @@ h3 {
 .education-keywords span {
   display: inline-flex;
   align-items: center;
-  min-height: 42px;
-  padding: 0 16px;
+  min-height: 46px;
+  padding: 0 18px;
   color: var(--green-dark);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
   background: rgba(223, 245, 237, 0.76);
   border: 1px solid rgba(22, 136, 61, 0.18);
