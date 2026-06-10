@@ -1216,19 +1216,15 @@ h3 {
   line-height: 1.65;
 }
 
-.leaflet-layout {
+.leaflet-program-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
-  gap: 22px;
-  align-items: start;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 18px;
+  align-items: stretch;
+  margin-bottom: 18px;
 }
 
-.leaflet-summary {
-  display: grid;
-  gap: 16px;
-}
-
-.leaflet-card,
+.leaflet-program-card,
 .leaflet-mini-grid article {
   padding: 24px;
   background: #fff;
@@ -1237,11 +1233,15 @@ h3 {
   box-shadow: 0 14px 34px rgba(40, 30, 20, 0.07);
 }
 
-.leaflet-card.green {
+.leaflet-program-card.economy {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(223, 245, 237, 0.68));
 }
 
-.leaflet-card span {
+.leaflet-program-card.speech {
+  background: linear-gradient(135deg, #fff, rgba(255, 248, 235, 0.78));
+}
+
+.leaflet-program-card > span {
   display: inline-grid;
   min-height: 34px;
   place-items: center;
@@ -1254,7 +1254,7 @@ h3 {
   border-radius: 999px;
 }
 
-.leaflet-card h3,
+.leaflet-program-card h3,
 .leaflet-mini-grid h3 {
   margin: 0 0 10px;
   color: var(--brown);
@@ -1262,7 +1262,7 @@ h3 {
   line-height: 1.25;
 }
 
-.leaflet-card p,
+.leaflet-program-card p,
 .leaflet-mini-grid li {
   color: var(--muted);
   font-size: 16px;
@@ -1333,8 +1333,29 @@ h3 {
 
 .leaflet-mini-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.program-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 950;
+  background: var(--green);
+  border-radius: 16px;
+}
+
+.program-icon.orange {
+  background: var(--orange);
+}
+
+.program-icon.pink {
+  background: var(--pink);
 }
 
 .leaflet-mini-grid ul {
@@ -1359,21 +1380,6 @@ h3 {
   height: 6px;
   background: var(--orange);
   border-radius: 50%;
-}
-
-.leaflet-preview {
-  display: grid;
-  gap: 14px;
-}
-
-.leaflet-preview img {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  box-shadow: 0 14px 34px rgba(40, 30, 20, 0.08);
 }
 
 .program-copy {
@@ -2018,7 +2024,7 @@ blockquote,
   .school-program-visual,
   .proof-section,
   .field-program-layout,
-  .leaflet-layout {
+  .leaflet-program-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2055,6 +2061,7 @@ blockquote,
   .teacher-grid,
   .split-note,
   .mosseuna-meaning-grid,
+  .leaflet-program-grid,
   .leaflet-mini-grid {
     grid-template-columns: 1fr;
   }
@@ -2143,6 +2150,7 @@ blockquote,
   .field-target-grid,
   .leaflet-levels,
   .challenge-steps,
+  .leaflet-mini-grid,
   .review-change,
   .review-grid,
   .contact-info,
