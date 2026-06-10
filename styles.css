@@ -1322,6 +1322,15 @@ h3 {
   color: var(--green);
 }
 
+.challenge-steps small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .leaflet-mini-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
