@@ -1035,6 +1035,167 @@ h3 {
   border-radius: 50%;
 }
 
+.field-program-section {
+  padding: 46px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 248, 235, 0.78));
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+
+.field-program-section .section-heading {
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+
+.field-program-section .section-heading p:last-child {
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.field-program-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.field-program-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.mosseuna-definition,
+.field-program-panel {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 14px 34px rgba(40, 30, 20, 0.07);
+}
+
+.mosseuna-definition h3,
+.field-program-panel h3 {
+  margin: 0 0 12px;
+  color: var(--brown);
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.mosseuna-definition p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.mosseuna-meaning-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mosseuna-meaning-grid div {
+  min-height: 132px;
+  padding: 16px;
+  background: rgba(255, 248, 235, 0.82);
+  border: 1px solid rgba(226, 215, 199, 0.9);
+  border-radius: 18px;
+}
+
+.mosseuna-meaning-grid b {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green-dark);
+  font-size: 20px;
+  font-weight: 950;
+}
+
+.mosseuna-meaning-grid span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.field-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field-photo-grid article {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(40, 30, 20, 0.06);
+}
+
+.field-photo-grid img {
+  display: block;
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+}
+
+.field-photo-grid article:nth-child(1) img {
+  object-position: 7% 22%;
+}
+
+.field-photo-grid article:nth-child(2) img {
+  object-position: 29% 22%;
+}
+
+.field-photo-grid article:nth-child(3) img {
+  object-position: 29% 50%;
+}
+
+.field-photo-grid article:nth-child(4) img {
+  object-position: 7% 78%;
+}
+
+.field-photo-grid strong {
+  display: block;
+  padding: 13px 14px 15px;
+  color: var(--green-dark);
+  font-size: 15px;
+  font-weight: 950;
+}
+
+.field-program-panel {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  background: linear-gradient(145deg, rgba(223, 245, 237, 0.78), #fff);
+}
+
+.field-program-items,
+.field-target-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.field-program-items span,
+.field-target-grid span {
+  display: grid;
+  min-height: 50px;
+  place-items: center;
+  padding: 10px 12px;
+  color: var(--green-dark);
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(203, 225, 214, 0.95);
+  border-radius: 16px;
+}
+
 .leaflet-section {
   padding: 46px;
   background: rgba(255, 255, 255, 0.76);
@@ -1847,6 +2008,7 @@ blockquote,
   .character-layout,
   .school-program-visual,
   .proof-section,
+  .field-program-layout,
   .leaflet-layout {
     grid-template-columns: 1fr;
   }
@@ -1864,6 +2026,7 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .event-camp-grid,
+  .field-photo-grid,
   .operation-grid,
   .review-change,
   .review-grid,
@@ -1882,6 +2045,7 @@ blockquote,
   .program-cards,
   .teacher-grid,
   .split-note,
+  .mosseuna-meaning-grid,
   .leaflet-mini-grid {
     grid-template-columns: 1fr;
   }
@@ -1964,7 +2128,10 @@ blockquote,
   .learn-strip,
   .learn-grid,
   .event-camp-grid,
+  .field-photo-grid,
   .operation-grid,
+  .field-program-items,
+  .field-target-grid,
   .leaflet-levels,
   .challenge-steps,
   .review-change,
@@ -2016,6 +2183,7 @@ blockquote,
 
   .program-band,
   .event-camp-section,
+  .field-program-section,
   .leaflet-section,
   .operation-section,
   .proof-copy,
