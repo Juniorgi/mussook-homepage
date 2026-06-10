@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="경제 캠프 일러스트">
+  <rect width="420" height="240" rx="28" fill="#fff8eb"/>
+  <circle cx="76" cy="52" r="28" fill="#dff5ed"/>
+  <circle cx="348" cy="48" r="34" fill="#ffe7d6"/>
+  <path d="M70 176h120l-58-98-62 98z" fill="#16883d"/>
+  <path d="M132 78v98h58l-58-98z" fill="#51bfa4"/>
+  <path d="M107 176l25-42 25 42h-50z" fill="#fff8eb"/>
+  <rect x="222" y="105" width="118" height="76" rx="18" fill="#fff" stroke="#e2d7c7" stroke-width="3"/>
+  <circle cx="252" cy="136" r="18" fill="#ffca46"/>
+  <text x="252" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#16883d">₩</text>
+  <rect x="282" y="123" width="38" height="8" rx="4" fill="#ff8a3d"/>
+  <rect x="282" y="142" width="28" height="8" rx="4" fill="#51bfa4"/>
+  <circle cx="96" cy="194" r="9" fill="#ffca46"/>
+  <circle cx="118" cy="197" r="9" fill="#ffca46"/>
+  <circle cx="140" cy="194" r="9" fill="#ffca46"/>
+  <path d="M46 205h328" stroke="#e2d7c7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M197 71h54l-12 18 12 18h-54z" fill="#ff8a3d"/>
+  <path d="M197 71v88" stroke="#463225" stroke-width="5" stroke-linecap="round"/>
+</svg>

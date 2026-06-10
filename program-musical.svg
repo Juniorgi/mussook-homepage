@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="경제 어린이 뮤지컬 일러스트">
+  <rect width="420" height="240" rx="28" fill="#fff8eb"/>
+  <path d="M64 62h292v130H64z" fill="#fff" stroke="#e2d7c7" stroke-width="3"/>
+  <path d="M64 62h292v42H64z" fill="#ff6b7b"/>
+  <circle cx="116" cy="83" r="12" fill="#ffca46"/>
+  <circle cx="164" cy="83" r="12" fill="#ffca46"/>
+  <circle cx="212" cy="83" r="12" fill="#ffca46"/>
+  <circle cx="260" cy="83" r="12" fill="#ffca46"/>
+  <circle cx="308" cy="83" r="12" fill="#ffca46"/>
+  <path d="M123 165c0-29 23-52 52-52s52 23 52 52" fill="#dff5ed"/>
+  <circle cx="175" cy="125" r="25" fill="#ffca46"/>
+  <path d="M165 125c5 7 15 7 20 0" stroke="#463225" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M250 164l45-25v50l-45-25z" fill="#51bfa4"/>
+  <rect x="232" y="143" width="24" height="42" rx="12" fill="#16883d"/>
+  <path d="M302 117c18 8 28 21 32 39M313 98c27 13 43 34 48 61" stroke="#ff8a3d" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M48 205h324" stroke="#e2d7c7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M92 137c16-16 33-16 49 0" stroke="#655499" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

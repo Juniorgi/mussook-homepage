@@ -976,14 +976,14 @@ h3 {
 
 .event-camp-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
 .event-camp-card {
-  display: grid;
-  align-content: start;
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  min-height: 430px;
   padding: 24px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
@@ -993,32 +993,6 @@ h3 {
 
 .event-camp-card.featured {
   background: linear-gradient(145deg, #ffffff, rgba(255, 248, 235, 0.92));
-}
-
-.event-camp-icon {
-  display: grid;
-  width: 58px;
-  height: 58px;
-  place-items: center;
-  margin-bottom: 18px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 950;
-  background: var(--green);
-  border-radius: 18px;
-  box-shadow: 0 12px 24px rgba(22, 136, 61, 0.18);
-}
-
-.event-camp-icon.mint {
-  background: var(--mint-strong);
-}
-
-.event-camp-icon.orange {
-  background: var(--orange);
-}
-
-.event-camp-icon.pink {
-  background: var(--pink);
 }
 
 .event-camp-kicker {
@@ -1264,6 +1238,9 @@ h3 {
 
 .leaflet-program-card,
 .leaflet-mini-grid article {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
   padding: 24px;
   background: #fff;
   border: 1px solid var(--line);
@@ -1375,25 +1352,11 @@ h3 {
   gap: 16px;
 }
 
-.program-icon {
-  display: grid;
-  width: 52px;
-  height: 52px;
-  place-items: center;
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 950;
-  background: var(--green);
-  border-radius: 16px;
-}
-
-.program-icon.orange {
-  background: var(--orange);
-}
-
-.program-icon.pink {
-  background: var(--pink);
+.program-card-image {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 18px;
+  border-radius: 18px;
 }
 
 .leaflet-mini-grid ul {

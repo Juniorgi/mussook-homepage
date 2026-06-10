@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="경제 골든벨 일러스트">
+  <rect width="420" height="240" rx="28" fill="#fff8eb"/>
+  <circle cx="86" cy="54" r="30" fill="#dff5ed"/>
+  <circle cx="337" cy="58" r="36" fill="#ffe7d6"/>
+  <path d="M175 82c0-34 27-58 63-58s63 24 63 58v52H175V82z" fill="#ffca46"/>
+  <path d="M166 134h144c8 0 15 7 15 15s-7 15-15 15H166c-8 0-15-7-15-15s7-15 15-15z" fill="#ff8a3d"/>
+  <rect x="203" y="164" width="70" height="19" rx="9" fill="#16883d"/>
+  <circle cx="238" cy="197" r="18" fill="#ffca46"/>
+  <text x="238" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="900" fill="#16883d">₩</text>
+  <rect x="70" y="127" width="80" height="56" rx="14" fill="#fff" stroke="#e2d7c7" stroke-width="3"/>
+  <path d="M90 148h40M90 164h28" stroke="#51bfa4" stroke-width="7" stroke-linecap="round"/>
+  <rect x="320" y="127" width="48" height="56" rx="13" fill="#fff" stroke="#e2d7c7" stroke-width="3"/>
+  <path d="M332 145h24M332 161h18" stroke="#16883d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M58 205h306" stroke="#e2d7c7" stroke-width="5" stroke-linecap="round"/>
+</svg>
