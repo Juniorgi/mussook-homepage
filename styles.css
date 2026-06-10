@@ -1768,16 +1768,52 @@ blockquote,
 
 .kakao-consult {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
+  grid-template-columns: 180px 150px minmax(0, 1fr);
   gap: 22px;
   align-items: center;
-  max-width: 620px;
+  max-width: 860px;
   margin: 30px auto 0;
   padding: 20px;
   text-align: left;
   background: var(--cream);
   border: 1px solid var(--line);
   border-radius: 22px;
+}
+
+.kakao-consult .dday-logo-link {
+  display: grid;
+  align-content: center;
+  min-height: 150px;
+  padding: 18px;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid rgba(101, 84, 153, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(101, 84, 153, 0.1);
+}
+
+.kakao-consult .dday-logo-link .dday-mark {
+  color: #655499;
+  font-size: 25px;
+  font-weight: 950;
+  letter-spacing: 0.02em;
+}
+
+.kakao-consult .dday-logo-link strong {
+  margin-top: 6px;
+  color: #655499;
+  font-size: 20px;
+  font-weight: 950;
+}
+
+.kakao-consult .dday-logo-link small {
+  margin-top: 7px;
+  color: rgba(101, 84, 153, 0.58);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
 }
 
 .kakao-consult img {
