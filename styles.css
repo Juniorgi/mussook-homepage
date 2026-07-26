@@ -65,8 +65,8 @@ img {
 }
 
 .brand-logo {
-  width: 230px;
-  height: 76px;
+  width: 248px;
+  height: 70px;
   flex: 0 0 auto;
   object-fit: contain;
 }
@@ -1751,12 +1751,12 @@ blockquote,
   display: flex;
   align-items: center;
   min-height: 150px;
-  padding: 14px;
+  padding: 0;
   text-decoration: none;
-  background: #fff;
-  border: 1px solid rgba(101, 84, 153, 0.22);
-  border-radius: 18px;
-  box-shadow: 0 12px 24px rgba(101, 84, 153, 0.1);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .kakao-consult .dday-contact-logo {
@@ -1994,8 +1994,8 @@ blockquote,
   }
 
   .brand-logo {
-    width: 190px;
-    height: 62px;
+    width: 210px;
+    height: 60px;
   }
 
   .brand strong {
@@ -2073,8 +2073,8 @@ blockquote,
   }
 
   .brand-logo {
-    width: 168px;
-    height: 56px;
+    width: 178px;
+    height: 52px;
   }
 
   .brand strong {
